@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>Putra R</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="shortcut icon" href="../gambar/logo/kurousagi.ico"/>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</head>
+	<body onLoad="random2()">
+		<div>
+			<div class="atas">
+				<div class="menu">
+					<table id="tmenu">
+						<tr>
+							<td><a href="../index.html"><div class="imenu">Home</div></a></td>
+							<td><a href="javascript:scroll()"><div class="imenu">Keatas</div></a></td>
+							<td><a href="../tutorial.html"><div class="imenu" onmouseover="muncul()" onmouseout="hilang()">Tutorial</div></a><div id="imenu" onmouseover="muncul()" onmouseout="hilang()"><a href="html_adalah.html"><div class="imenu">HTML</div></a><a href="css_adalah.html"><div class="imenu">CSS</div></a><a href="javascript_adalah.html"><div class="imenu">Javascript</div></a><a href="corel_adalah.html"><div class="imenu">Corel</div></a><a href="flash_adalah.html"><div class="imenu">Flash</div></a></div></td>
+							<td><a href="javascript:inama()" onclick="scroll()"><div id="inama" class="imenu">. . .</div></a></td>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<div class="change">
+					<center>Ganti Background : <br>
+					<a href="javascript:red2()"><div class="imenu">Red</div></a>
+					<a href="javascript:blue2()"><div class="imenu">Blue</div></a>
+					<a href="javascript:green2()"><div class="imenu">Green</div></a></center>
+				</div>
+				<div class="schange">
+				</div>
+				<center><img id="tenshiki"/></center>
+			</div>
+			
+			
+		<center>
+				<div class="judul pisi">&nbsp;</div>
+				<div class="tengah2">
+			<hr width="95%" size="3" color="white"/>
+			<center><h2>CSS</h2></center>
+			<hr width="80%" size="1" color="white"/>
+			<div align="left">
+			<blockquote>
+				<p>CSS atau Cascade Style Sheet sering sekali digunakan untuk membuat tampilan dokumen HTML menjadi lebih cantik.
+				Berikut adalah fungsi, keuntungan, dan cara penulisan kode CSS dalam HTML.</p>
+				<ul type="square">
+					<li>Fungsi:<ul type="circle">
+						<li>Mengatur style elemen yang ada di halaman web, mulai dari memformat text dan format layout.
+						<li>Mengatur kekonsistenan style pada elemen tertentu</ul>
+					<li>Keuntungan CSS:<ul type="circle">
+						<li>Ukuran file lebih kecil
+						<li>Upload file lebih cepat
+						<li>Dapat berkolaborasi dengan javascript
+						<li>Pasangan setia XHTML
+						<li>Menghemat pekerjaan dalam membuat code
+						<li>Mudah mengganti-ganti tampilan hanya dengan mengubah file CSSnya saja</ul>
+					<li>Ada 3 cara penempatan kode CSS dalam HTML, yaitu:<ol type="1">
+						<li>internal CSS
+							<br>yaitu menuliskan langsung script CSS di file HTML-nya.
+							<br><br>contoh:
+							<br><br>&lt;html&gt;
+							<br>&lt;head&gt;
+							<br>&lt;title&gt; Materi dengan CSS &lt;/title&gt;
+							<br>&lt;style type= "text/css"&gt;
+							<br>h1 {
+							<br>color: green;
+							<br>font-family : "courier new";
+							<br>}
+							<br>&lt;/style&gt;
+							<br>&lt;/head&gt;
+							<br>&lt;body&gt;
+							<br>&lt;h1&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;h1&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;h1&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;/body&gt;
+							<br>&lt;/html&gt;
+							<br><br>
+						<li>external CSS
+							<br>yaitu memanggil file CSS dari tempat/folder/lokasi lain, dalam hal ini berarti file CSS terpisah dengan file HTML.
+							<br>External style ditulis di text editor lain dengan ekstension .css.
+							<br><br>contoh:
+							<br>buat 2 buah file seperti di bawah ini:
+							<br><br>file 1 : simpan dengan nama coba eks.html
+							<br>code:
+							<br><br>&lt;html&gt;
+							<br>&lt;head&gt;
+							<br>&lt;title&gt;Eksternal link&lt;/title&gt;
+							<br>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;
+							<br>&lt;/head&gt;
+							<br>&lt;body&gt;
+							<br>&lt;p&gt;Belajar eksternal link 1. Belajar eksternal link 1. Belajar eksternal link 1.&lt;/p&gt;
+							<br>&lt;p class=&quot;group&quot;&gt;Belajar eksternal link 2. Belajar eksternal link 2. Belajar eksternal link 2.&lt;/p&gt;
+							<br>&lt;p class=&quot;group&quot; id=&quot;one&quot;&gt;Belajar eksternal link 3. Belajar eksternal link 3. Belajar eksternal link 3.&lt;/p&gt;
+							<br>&lt;/body&gt;
+							<br>&lt;/html&gt;
+							<br><br>File 2: simpan dengan nama style.css
+							<br>Code:
+							<br><br>&lt;style type=&quot;text/css&quot;&gt;
+							<br>p {
+							<br>color: #FFFFF;
+							<br>font-family: arial;
+							<br>font-weight: bold;
+							<br>}
+							<br>p.group {
+							<br>color: #008080;
+							<br>font-family: arial;
+							<br>background: #FFFFFF;
+							<br>}
+							<br>p#one {
+							<br>color: #F08080;
+							<br>font-family: &quot;times new roman&quot;;
+							<br>}
+							<br>&lt;/style&gt;
+							<br><br>
+						<li>inline CSS
+							<br>yaitu penulisan kode CSS dalam tag HTML.
+							<br><br>contoh:
+							<br><br>&lt;html&gt;
+							<br>&lt;head&gt;
+							<br>&lt;title&gt; Materi dengan CSS &lt;/title&gt;
+							<br>&lt;/head&gt;
+							<br>&lt;body&gt;
+							<br>&lt;h1 style="color:green;"&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;h1 style="color:red;text-indent:30px;"&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;h1&gt;contoh pengaturan penulisan heading 1&lt;/h1&gt;
+							<br>&lt;p&gt;isi paragraf pengaturan penulisan heading. &lt;/p&gt;
+							<br>&lt;/body&gt;
+							<br>&lt;/html&gt;
+							<br><br>
+						</ol>
+				</ul>
+				<div align="right">Rosihan Ari 2007.<br>CSS Tutorial.</div>
+			</blockquote>
+			</div>
+			<hr width="90%" size="2" color="red"/>
+			<br>
+		</div>
+		</center>
+	
+			<br>
+			<div class="bawah">
+				Copyright<sup>&copy;</sup> 2014 by Putra Rahmadi
+				<center><embed src="../gambar/logo/undg.swf" id="underground"/></center>
+			</div>
+		</div>
+	</body>
+</html>

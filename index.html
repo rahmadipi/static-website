@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<title>Putra R</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="shortcut icon" href="gambar/logo/kurousagi.ico"/>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body onLoad="random(),waktu(),tanggal(),sapa()">
+		<div>
+			<div class="atas">
+				<div class="menu">
+					<table id="tmenu">
+						<tr>
+							<td><a href="index.html"><div class="imenu">Home</div></a></td>
+							<td><a href="javascript:mpmuncul()">
+									<div class="imenu" onmouseout="mphilang()">Register</div>
+								</a>
+								<div id="pimenu" onmouseover="mpmuncul()" onmouseout="mphilang()">
+									<a href="javascript:pmuncul()">
+										<div class="imenu">Tampilkan</div>
+									</a>
+									<a href="javascript:philang()">
+										<div class="imenu">Hilangkan</div>
+									</a>
+								</div>
+							</td>
+							<td><a href="tutorial.html">
+									<div class="imenu" onmouseover="muncul()" onmouseout="hilang()">Tutorial</div>
+								</a>
+								<div id="imenu" onmouseover="muncul()" onmouseout="hilang()">
+									<a href="isi/html_adalah.html">
+										<div class="imenu">HTML</div>
+									</a>
+									<a href="isi/css_adalah.html">
+										<div class="imenu">CSS</div>
+									</a>
+									<a href="isi/javascript_adalah.html">
+										<div class="imenu">Javascript</div>
+									</a>
+									<a href="isi/corel_adalah.html">
+										<div class="imenu">Corel</div>
+									</a>
+									<a href="isi/flash_adalah.html">
+										<div class="imenu">Flash</div>
+									</a>
+								</div>
+							</td>
+							<td><a href="javascript:inama()" onclick="scroll()"><div id="inama" class="imenu">. . .</div></a></td>
+						</tr>
+					</table>
+				</div>
+				<div id="kpict">
+					<br><br>
+					<center>
+					<form method="get">
+						<hr width=100% color="white">
+						<legend>Register</legend>
+						<hr width=100% color="white">
+						<br>
+						Nama :
+						<br><input type="text" name="n" size="15">
+						<br><br>Email :
+						<br><input type="text" name="e" size="15" id="email">
+						<br><br>Gender :
+						<br><input type="radio" name="g">Pria &nbsp;<input type="radio" name="g">Wanita
+						<br><br>Tanggal Lahir :
+						<br><select name="t">
+								<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+								<option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option>
+								<option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+								<option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option>
+								<option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>
+								<option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option>
+								<option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option>
+								<option value="29">29</option><option value="30">30</option><option value="31">31</option>
+							</select>&nbsp;
+							<select name="b">
+								<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+								<option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option>
+								<option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+							</select>
+						<br><br>
+						<button type="submit" value="Submit" class="imenu" style="width:60px;display:none;margin-right:5px;" id="submit">Submit</button>
+						<button type="reset" value="Reset" class="imenu" style="width:60px">Reset</button>
+					</form>
+					<button value="Cek" class="imenu" style="width:60px" onclick="email()">Cek</button>
+					</center>
+				</div>
+				<br>
+				<div class="change">
+					<center>Ganti Background : <br>
+					<a href="javascript:red()"><div class="imenu">Red</div></a>
+					<a href="javascript:blue()"><div class="imenu">Blue</div></a>
+					<a href="javascript:green()"><div class="imenu">Green</div></a></center>
+				</div>
+				<div class="schange">
+				</div>
+				<center><img id="tenshiki"/></center>
+			</div>
+			<center>
+				<div class="judul pisi">&nbsp;</div>
+				<div class="gmenu">
+					<div style="float:left">
+					Recommended Anime
+					<div id="bpict" align="center">
+						<marquee width="100%">
+						<img id="pict" src="gambar/pict/1.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/2.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/3.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/4.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/5.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/6.jpg" border="2"/>
+						<img id="pict" src="gambar/pict/7.jpg" border="2"/>
+						</marquee>
+					</div>
+					</div>
+					<div id="tgmenu" align="center">
+						<div align=left>
+						<ol type="circle">
+							<li>Steins;Gate
+							<li>Code Geass
+							<li>Seto no Hanayome
+							<li>Suzumiya Haruhi no Yuuutsu
+							<li>Binbougami ga!
+							<li>Noragami
+							<li>Magi
+						</div>
+					</div>
+				</div>
+				<div class="tengah">
+					<div class="sisi">
+						<div class="judul" id="tmenu">Tanggal</div>
+						<div id="tanggal"></div>
+						<div class="judul">JAM</div>
+						<div id="jam"></div>
+						<div class="judul">Link Download Anime</div>
+						<div id="sisi">
+							<a href="http://www.awsubs.us/" target="_blank">AWsusb</a>
+							<br><a href="http://www.animekompi.web.id/" target="_blank">Animekompi</a>
+							<br><a href="http://www.oploverz.net/" target="_blank">OPloverz</a>
+						</div>
+					</div>
+					<div class="judul jisi" id="tmenu" align=left>&nbsp;</div>
+					<div class="isi">
+						<div>
+			<hr width="95%" size="3" color="white"/>
+			<div align="center"><h2>Tenshiki</h2></div>
+			<hr width="80%" size="1" color="white"/>
+			<div align="left">
+			<blockquote>
+				<p><span>B</span>erasal dari bahasa jepang, yaitu dari kata Tenshi dan Shiki.
+				Pasti banyak yang sudah tahu bahasa indonesia dari tenshi dan shiki, mengingat kata-kata tersebut sering diucapkan di anime-anime.
+				Seperti contohnya kata tenshi yang sangat sering disebut pada anime angel beats! dan shiki pada anime naruto.
+				<br>Yap, Tenshi berarti malaikat atau angel dan Shiki berarti Dewa Kematian atau reaper (CMIIW :P).
+				<br>Sebenarnya saya juga tidak terlalu yakin itu artinya tepat atau tidak, tapi kalau dilogika artinya ya itu :D.
+				</p>
+				<br><span>M</span>&nbsp;engapa website ini diberi nama Tenshiki ? :o
+				<p>Karena Tenshi dan Shiki, Malaikat dan Dewa Kematian, Putih dan Hitam, merupakan dua hal yang berbeda, saling berkebalikan, dan tidak bisa menyatu.
+				Yap, seperti konten dari website ini, tidak hanya satu hal yang saya bagikan, akan tetapi berbagi macam hal yang menurut saya menarik meskipun <strike>terkadang</strike> sering tidak ada hubunganya.
+				Seperti Anime dan Tutorial web design :D.
+				<br><br>&nbsp;&nbsp;Meskipun tidak jelas tapi mudah-mudahan bermanfaat... AYE!!
+				<img src="gambar/konten/aye.png" style="float:left">
+				</p>
+			</blockquote>	
+			</div>
+		</div>
+		<br/><br/>
+		<hr width="90%" size="2" color="red"/>
+		<br>
+					</div>		
+				</div>
+			</center>
+			<div class="bawah">
+				Copyright<sup>&copy;</sup> 2014 by Putra Rahmadi
+				<center><embed src="gambar/logo/undg.swf" id="underground"/></center>
+			</div>
+		</div>
+	</body>
+</html>

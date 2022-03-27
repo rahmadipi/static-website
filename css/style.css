@@ -1,0 +1,226 @@
+body{font-family:tekton pro;margin:0px auto;}
+.atas a:link, .atas a:visited, .atas a:active{color:white;}
+p{text-indent:30px;}
+a:link{color:rgb(0,100,0);}
+a:visited{color:rgb(100,0,0);}
+a:active{color:rgb(255,0,0);}
+a{text-decoration:none;}
+span{float:left;font-size:200%;width:0.7em;line-height:40%;}
+
+.atas{
+	width:100%;height:210px;min-width:1030px;
+	background: -webkit-radial-gradient(top,ellipse cover, rgba(0,0,0,0) 75%, rgb(0,0,0) 100%);
+	background: -moz-radial-gradient(top,ellipse cover, rgba(0,0,0,0) 50%, rgb(0,0,0) 100%);
+	background: -o-radial-gradient(top,ellipse cover, rgba(0,0,0,0) 75%, rgb(0,0,0) 100%);
+	background: -ms-radial-gradient(top,ellipse cover, rgba(0,0,0,0) 75%, rgb(0,0,0) 100%);
+	margin:0px;
+	box-shadow:0px 0px 8px 5px black;
+}
+#tenshiki{
+	margin:auto;margin-top:15px;
+}
+#kpict{
+	width:160px;height:100%;
+	background:rgba(255,255,255,0.5);
+	margin:0px;
+	border:1px red solid;border-top:0px;border-bottom:0px;
+	box-shadow:2px 2px 2px;
+	position:fixed;
+	display:none;
+	z-index:1;
+}
+.schange{
+	float:left;
+	width:147px;height:147px;
+	margin-top:25px;margin-left:15px;
+/*	animation:putar 5s 0s infinite;
+}
+@keyframes putar{
+0%{-moz-transform:rotate(0deg)}
+25%{-moz-transform:rotate(90deg)}
+50%{-moz-transform:rotate(180deg)}
+75%{-moz-transform:rotate(270deg)}
+100%{-moz-transform:rotate(360deg)}
+*/
+}
+.change{
+	width:145px;height:120px;
+	float:right;
+	margin-top:25px;margin-right:15px;
+	border-left:1px white solid;border-right:1px white solid;
+	color:white;
+	padding-top:30px;
+	text-shadow:0px 0px 5px black;
+	animation:none;
+}
+.change:hover{
+	animation:bgp 10s infinite;
+	-webkit-animation:bgp 10s infinite;
+}
+.menu{
+	width:100%;
+	background:url(../gambar/menu.png);
+	margin:0px;
+	border:1px red solid;border-right:0px;border-left:0px;
+	position:fixed;
+	box-shadow:2px 2px 2px;
+	z-index:100;
+}
+#tmenu{
+	margin:0px auto;
+}
+.imenu{
+	text-align:center;
+	width:80px;
+	background-image:url(../gambar/imenu.png);
+	border:1px white solid;
+	border-radius:5px;
+	box-shadow:0px 0px 0px;
+	color:white;
+}
+.imenu:hover{
+	background-image:url(../gambar/imenuh.png);
+}
+#imenu{
+	position:absolute;
+	color:white;
+	display:none;
+}
+#pimenu{
+	z-index:1;
+	position:absolute;
+	color:white;
+	display:none;
+}
+
+
+.tengah{
+	width:1000px;
+	margin:15px;
+	padding:3px;
+	overflow-x:hidden;overflow-y:hidden;
+}
+.tengah2{
+	width:1000px;
+	background:rgba(255,255,255,0.8);
+	box-shadow:0px 0px 3px 1px black;
+	margin:15px;
+	margin-top:0px;
+	overflow-x:hidden;overflow-y:hidden;
+}
+#html1, #html2, #html3{
+	display:none;
+}
+#tgmenu{
+	height:190px;float:right;width:285px;
+	margin-right:15px;
+	margin-top:25px;
+	background:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 2px inset;
+}
+.gmenu{
+	width:1000px;height:230px;
+	margin:0px 15px;
+	background:rgba(255,255,255,0.8);
+	box-shadow:0px 0px 3px 1px black;
+}
+#pict{
+	border-radius:10px;
+	margin-top:8px;
+	max-height:170px;
+	margin-right:25px;
+}
+#bpict{
+	width:660px;height:190px;
+	margin:5px 15px;
+	background:rgba(0,0,0,0.1);
+	box-shadow:0px 0px 2px inset;
+}
+@keyframes bgp{
+	0%{background:rgba(255,255,255,0.4);}
+	12.5%{background:rgba(255,255,0,0.4);}
+	25%{background:rgba(255,0,0,0.4);}
+	37.5%{background:rgba(255,0,255,0.4);}
+	50%{background:rgba(0,0,255,0.4);}
+	62.5%{background:rgba(0,0,0,0.4);}
+	75%{background:rgba(0,255,0,0.4);}
+	82.5%{background:rgba(0,255,255,0.4);}
+	100%{background:rgba(255,255,255,0.4);}
+}
+@-webkit-keyframes bgp{
+	0%{background:rgba(255,255,255,0.4);}
+	12.5%{background:rgba(255,255,0,0.4);}
+	25%{background:rgba(255,0,0,0.4);}
+	37.5%{background:rgba(255,0,255,0.4);}
+	50%{background:rgba(0,0,255,0.4);}
+	62.5%{background:rgba(0,0,0,0.4);}
+	75%{background:rgba(0,255,0,0.4);}
+	82.5%{background:rgba(0,255,255,0.4);}
+	100%{background:rgba(255,255,255,0.4);}
+}
+.isi{
+	width:675px;
+	background:rgba(255,255,255,0.8);
+	float:left;
+	box-shadow:0px 0px 3px 1px black;
+}
+#ktutor{
+	float:left;
+	width:140px;height:95px;
+}
+#tutor{
+	border-radius:10px;
+	width:120px;height:90px;
+	box-shadow:0px 0px 5px;
+}
+#tutor:hover{
+	width:130px;height:95px;
+}
+#itutor{
+	height:95px;
+	padding-right:5px;
+}
+.judul{
+	color:white;
+	text-align:center;
+	background:url(../gambar/judul.png);
+	margin-top:15px;
+	box-shadow:0px 0px 3px 1px black;
+	width:300px;
+}
+.sisi{
+	float:right;
+	width:300px;
+}
+#tanggal, #jam, #sisi{
+	text-align:center;
+	background:rgba(255,255,255,0.8);
+	box-shadow:0px 0px 3px 1px black;
+	width:300px;
+}
+.jisi{
+	width:675px;float:left;
+}
+
+.pisi{
+	width:1000px;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+
+.bawah{
+	text-align:center;
+	width:100%;height:150px;min-width:1030px;
+	background: -webkit-radial-gradient(bottom,ellipse cover, rgba(0,0,0,0) 20%, rgb(0,0,0) 99%);
+	background: -moz-radial-gradient(bottom,ellipse cover, rgba(0,0,0,0) 20%, rgb(0,0,0) 99%);
+	background: -o-radial-gradient(bottom,ellipse cover, rgba(0,0,0,0) 20%, rgb(0,0,0) 99%);
+	background: -ms-radial-gradient(bottom,ellipse cover, rgba(0,0,0,0) 20%, rgb(0,0,0) 99%);
+	margin:0px;
+	color:white;
+	box-shadow:0px 0px 8px 5px black;
+}
+#underground{
+	height:110px;
+	margin:10px;
+}
